@@ -18,8 +18,6 @@ This setup uses Ubuntu Noble 24.04 + Gazebo Harmonic + ROS 2 Jazzy Jalisco, but 
 
 ## 1 Prerequisites
 
-Ensure that you have the following tools installed. 
-
 ### Installing ROS 2 and Gazebo
 
 1. **Check your Ubuntu version:**
@@ -80,7 +78,7 @@ This section is based on a fork from https://github.com/SpaceMaster85/fusion2urd
 Clone this repo
 
 ```shell
- git clone git@github.com:BabyRobotics/Import_Fusion_Model_to_Gazebo.git
+ git clone git@github.com:YanningDai/Import_Fusion_Model_to_Gazebo.git
 ```
 
 **Note:** By default, this setup uses ROS 2; however, if you need ROS 1, set the variable `ros_version_is_ros1` to `True` in the `Import_Fusion_Model_to_Gazebo/URDF_Exporter.py` file.
@@ -101,9 +99,9 @@ cd Import_Fusion_Model_to_Gazebo
 cp -r ./URDF_Exporter "$HOME/Library/Application Support/Autodesk/Autodesk Fusion 360/API/Scripts/"
 ```
 
-### Run in Fusion 360
+### Model Export
 
-- **Important:** Before exporting, review your model settings as outlined in [Fusion Model Settings](#fusion-model-settings).
+- **Important:** Before exporting, check your model settings in [Fusion Model Settings](#fusion-model-settings).
 
 - Once your model is ready, go to **ADD-INS** in Fusion 360 and select **URDF_Exporter**.
 

@@ -29,6 +29,8 @@ def run(context):
     success_msg = 'Successfully create URDF file'
     msg = success_msg
 
+    ros_version_is_ros1 = False
+
     try:
         # --------------------
         # initialize
@@ -52,29 +54,9 @@ def run(context):
             ui.messageBox('Fusion2URDF was canceled', title)
             return 0
         
-        appWin=tk.Tk()
-        appWin.title("Choose your ROS Version")
-        appWin.attributes('-toolwindow', True)
-        appWin.geometry('300x150')
-
-        ros_selection = tk.IntVar()
-        def sel():
-            appWin.destroy()
-            appWin.quit()
-
-
-        tk.Radiobutton(appWin, text="ROS 1",font=('Aerial', 14) ,indicatoron = 0, width = 150, height = 3, variable=ros_selection, value=1,
-                  command=sel).pack()
-
-        tk.Radiobutton(appWin, text="ROS 2",font=('Aerial', 14), indicatoron = 0, width = 150, height = 3, variable=ros_selection, value=2,
-                  command=sel).pack()
-
-        appWin.mainloop()
 
         
 
-        
-        
    
         save_dir= save_dir + '/' + package_name
         try: os.mkdir(save_dir)
@@ -110,10 +92,10 @@ def run(context):
         links_xyz_dict = {} 
         # --------------------
         # Generate URDF
-        Write.write_urdf(joints_dict, links_xyz_dict, inertial_dict, material_dict, package_name, robot_name, save_dir, ros_selection.get() != 2)
+        Write.write_urdf(joints_dict, links_xyz_dict, inertial_dict, material_dict, package_name, robot_name, save_dir, ros_version_is_ros1)
         Write.write_materials_xacro(color_dict, robot_name, save_dir)
         Write.write_transmissions_xacro(joints_dict, links_xyz_dict, robot_name, save_dir)
-        if (ros_selection.get() == 2):
+        if not ros_version_is_ros1:
 
             utils.copy_package(save_dir, package_dir_ros2)
             utils.update_cmakelists(save_dir, package_name)

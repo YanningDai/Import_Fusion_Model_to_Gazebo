@@ -11,8 +11,8 @@ This setup uses Ubuntu Noble 24.04 + Gazebo Harmonic + ROS 2 Jazzy Jalisco, but 
 1. [Prerequisites](#1-prerequisites)
 2. [Export Fusion360 Model](#2-export-fusion360-model)
 3. [Import to Gazebo](#3-import-to-gazebo)
-4. [Fusion Model Settings](#fusion-model-settings)
-5. [Troubleshooting in Gazebo](#troubleshooting-in-gazebo)
+4. [Fusion Model Settings](#4-fusion-model-settings)
+5. [Troubleshooting in Gazebo](#5-troubleshooting-in-gazebo)
 
 
 

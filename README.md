@@ -148,7 +148,7 @@ gz sim src/${MODEL_NAME}_description/urdf/${MODEL_NAME}.sdf
 
 
 
-## Fusion Model Settings
+## 4 Fusion Model Settings
 
 **Links**
 
@@ -176,7 +176,7 @@ For more details and examples, see:  https://github.com/SpaceMaster85/fusion2urd
 
 
 
-## Troubleshooting in Gazebo
+## 5 Troubleshooting in Gazebo
 
 1. If `gz sim` loads the SDF model but doesn’t display it, try setting the mesh scale to `1:1:1` as it may be too small.
 

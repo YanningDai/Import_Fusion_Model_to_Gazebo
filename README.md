@@ -2,7 +2,7 @@
 
 This guide provides instructions for setting up the environment to import models from Fusion 360 into Gazebo. The conversion process relies on a tool in ROS 2, so ROS 2 must also be installed.
 
-This setup uses Ubuntu Noble 24.04 + Gazebo Harmonic + ROS 2 Jazzy Jalisco, but other Ubuntu and ROS 2 versions should work. Gazebo Harmonic is recommended for  compatibility. For issues with other versions of Gazebo, see [Troubleshooting in Gazebo](#troubleshooting-in-gazebo) at the end.
+This setup uses Ubuntu Noble 24.04 + Gazebo Harmonic + ROS 2 Jazzy Jalisco, but other Ubuntu and ROS 2 versions should work. Gazebo Harmonic is recommended for  compatibility. For issues with other versions of Gazebo, see [Troubleshooting in Gazebo](#5-troubleshooting-in-gazebo) at the end.
 
 
 
@@ -101,7 +101,7 @@ cp -r ./URDF_Exporter "$HOME/Library/Application Support/Autodesk/Autodesk Fusio
 
 ### Model Export
 
-- **Important:** Before exporting, check your model settings in [Fusion Model Settings](#fusion-model-settings).
+- **Important:** Before exporting, check your model settings in [Fusion Model Settings](#4-fusion-model-settings).
 
 - Once your model is ready, go to **ADD-INS** in Fusion 360 and select **URDF_Exporter**.
 

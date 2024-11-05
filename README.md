@@ -182,7 +182,7 @@ For more details and examples, see:  https://github.com/SpaceMaster85/fusion2urd
 
 2. If the SDF file can’t find the model path, it could be due to a version mismatch. Use `gz sim -h` to check environment variables, and update `export GZ_SIM_RESOURCE_PATH` to match the model path variable in your version. Some Gazebo versions use `GAZEBO_MODEL_PATH` as the path for models.
 
-3. Materials aren’t set, so `inertial` matrix and `mass` parameters might be incorrect, but this won’t affect the display.
+3. Materials aren’t set, so `inertial matrix` and `mass` parameters might be incorrect, but this won’t affect the display.
 
 4. If the Gazebo world doesn’t update and remains in a previous state, clear the Gazebo cache with:
 

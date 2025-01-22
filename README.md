@@ -1,5 +1,7 @@
 # Import Fusion360 Model to Gazebo
 
+(Based on wonderful work by [SpaceMaster85](https://github.com/SpaceMaster85/fusion2urdf), with modifications to support the latest Fusion version.)
+
 This guide provides instructions for setting up the environment to import models from Fusion 360 into Gazebo. The conversion process relies on a tool in ROS 2, so ROS 2 must also be installed.
 
 This setup uses Ubuntu Noble 24.04 + Gazebo Harmonic + ROS 2 Jazzy Jalisco, but other Ubuntu and ROS 2 versions should work. Gazebo Harmonic is recommended for  compatibility. For issues with other versions of Gazebo, see [Troubleshooting in Gazebo](#5-troubleshooting-in-gazebo) at the end.
